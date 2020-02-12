@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../Processeur.srcs/sources_1/new/CntAdresse.vhd"
+vhdl xil_defaultlib  "../../../Processeur.srcs/sim_1/new/tb_CntAdresse.vhd"
+
+# Do not sort compile order
+nosort

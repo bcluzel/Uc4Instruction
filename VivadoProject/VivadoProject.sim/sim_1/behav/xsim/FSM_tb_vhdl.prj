@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../src/ControlUnit/FSM.vhd" \
+"../../../../VivadoProject.srcs/sim_1/new/tb_FSM.vhd" \
+
+# Do not sort compile order
+nosort

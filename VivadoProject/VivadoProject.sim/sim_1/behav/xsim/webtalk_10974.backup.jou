@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Feb 12 17:20:49 2020
+# Process ID: 10974
+# Current directory: /home/bcluzel/Documents/SEE/2A/Concept_hard_proc_4_intruct/Uc4Instruction/VivadoProject/VivadoProject.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/bcluzel/Documents/SEE/2A/Concept_hard_proc_4_intruct/Uc4Instruction/VivadoProject/VivadoProject.sim/sim_1/behav/xsim/xsim.dir/nregister_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/bcluzel/Documents/SEE/2A/Concept_hard_proc_4_intruct/Uc4Instruction/VivadoProject/VivadoProject.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/bcluzel/Documents/SEE/2A/Concept_hard_proc_4_intruct/Uc4Instruction/VivadoProject/VivadoProject.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/bcluzel/Documents/SEE/2A/Concept_hard_proc_4_intruct/Uc4Instruction/VivadoProject/VivadoProject.sim/sim_1/behav/xsim/xsim.dir/nregister_tb_behav/webtalk/xsim_webtalk.tcl -notrace
