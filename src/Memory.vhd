@@ -24,7 +24,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
@@ -46,7 +46,7 @@ end Memory;
 
 architecture Behavioral of Memory is
 type table_mem is array (0 to MEM_SIZE-1) of std_logic_vector(R_SIZE-1 downto 0);
-signal table_mem : my_table;
+signal my_table : table_mem := (X"08", X"47", X"86", X"C4", X"C4", X"00", X"00", X"7E", X"FE", others => X"00");
 begin
 
     Memory : process (in_clk)
@@ -57,9 +57,9 @@ begin
             if in_ce = '1' then
                 if in_en = '1' then
                     if in_rw = '0' then
-                        out_data <= my_table(in_adress);
+                        out_data <= my_table(to_integer(unsigned(in_adress)));
                     else
-                        my_table(in_adress) <= in_data;
+                        my_table(to_integer(unsigned(in_adress))) <= in_data;
                     end if;
                 end if;
             end if;

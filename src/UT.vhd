@@ -37,7 +37,7 @@ entity UT is
            in_ce : in STD_LOGIC;
            in_data : in STD_LOGIC_VECTOR (7 downto 0);
            in_loadAccu : in STD_LOGIC;
-           in_setUALcalc : in STD_LOGIC;
+           in_selUALcalc : in STD_LOGIC;
            in_initCarry : in STD_LOGIC;
            in_loadCarry : in STD_LOGIC;
            in_loadData : in STD_LOGIC;
@@ -93,10 +93,10 @@ Reg_Data : Nregister
         Port map (in_data => in_data, in_load => in_loadData, in_ce => in_ce, in_clk => in_clk, in_reset => in_reset, out_data => s_dataUALa);
 
 UAL_Component : UAL
-        Port map (in_select => in_setUALcalc, in_dataA => s_dataUALa, in_dataB => s_dataUALb, out_carry => s_inCarry, out_data => s_dataAccu);
+        Port map (in_select => in_selUALcalc, in_dataA => s_dataUALa, in_dataB => s_dataUALb, out_carry => s_inCarry, out_data => s_dataAccu);
 
 Reg_Accu : Nregister
-        Port map (in_data => s_dataAcc, in_load => in_loadAccu, in_ce => in_ce, in_clk => in_clk, in_reset => in_reset, out_data => s_dataUALb);
+        Port map (in_data => s_dataAccu, in_load => in_loadAccu, in_ce => in_ce, in_clk => in_clk, in_reset => in_reset, out_data => s_dataUALb);
         
 out_data <= s_dataUALb;
 

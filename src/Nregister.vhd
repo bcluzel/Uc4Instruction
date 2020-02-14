@@ -1,9 +1,29 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 13.02.2020 12:58:39
+-- Design Name: 
+-- Module Name: Nregister - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 
-entity nregister is
+entity Nregister is
     generic(
     constant R_SIZE: natural := 8
     );
@@ -18,7 +38,7 @@ entity nregister is
     );
 end entity;
 
-architecture rtl of nregister is
+architecture rtl of Nregister is
 
 begin
 
@@ -37,3 +57,4 @@ begin
     
 
 end architecture;
+

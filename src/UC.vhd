@@ -39,7 +39,7 @@ entity UC is
            in_carry : in STD_LOGIC;
            in_dataUC : in STD_LOGIC_VECTOR (7 downto 0);
            
-           out_setUALcalc : out STD_LOGIC;
+           out_selUALcalc : out STD_LOGIC;
            out_initCarry : out STD_LOGIC;
            out_loadCarry : out STD_LOGIC;
            out_loadData : out STD_LOGIC;
@@ -132,6 +132,6 @@ Mult : Multiplexer
         
 FSM_UC : FSM 
         Port map (in_clk => in_clk, in_ce => in_ce, in_reset => in_reset, in_instruction => s_inFSMinstruct, in_carry => in_carry, out_load_accu => out_loadAccu, out_load_data => out_loadData, out_load_carry => out_loadCarry, 
-        out_init_carry => out_initCarry, out_ual_set_val => out_setUALcalc, out_load_instruct => s_load_instruction, out_sel_mux => s_selectMux, out_load_cnt => s_loadCnt, out_init_cnt => s_initCnt, out_en_cnt => s_enableCnt, out_en_memory => out_enMem, out_sel_memory_r_w => out_rw);
+        out_init_carry => out_initCarry, out_ual_set_val => out_selUALcalc, out_load_instruct => s_load_instruction, out_sel_mux => s_selectMux, out_load_cnt => s_loadCnt, out_init_cnt => s_initCnt, out_en_cnt => s_enableCnt, out_en_memory => out_enMem, out_sel_memory_r_w => out_rw);
 
 end Behavioral;
